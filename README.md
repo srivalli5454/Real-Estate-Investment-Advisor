@@ -1,102 +1,61 @@
 # Real Estate Investment Advisor
 
-A Machine Learning-powered web application that helps users analyze real estate properties and make data-driven investment decisions.
+A Machine Learning-based web application that helps users analyze real estate properties by predicting:
 
-## Project Overview
+- Estimated Property Value
+- Investment Potential
+- Investment Recommendation
 
-The Real Estate Investment Advisor uses trained XGBoost machine learning models to analyze property details and provide:
+The application uses trained Machine Learning models and provides an interactive interface built with Streamlit.
 
-- Property investment potential prediction
-- Estimated property value
-- Investment recommendation
+## Live Application
 
-The application provides an interactive interface built with Streamlit, allowing users to enter property details, select a locality, choose available amenities, and receive predictions.
+You can access the deployed application here:
+
+**https://real-estate-investment-advisor-h963vhfzt2dznvmshprgnd.streamlit.app**
 
 ## Features
 
-- Predicts property investment potential
-- Estimates property value
-- Provides an investment recommendation
-- Interactive Streamlit web application
-- Locality-based property analysis
-- Amenity selection
-- Uses trained XGBoost machine learning models
+- Predicts estimated property value
+- Predicts investment potential
+- Provides investment recommendations
+- Accepts property details such as BHK, price, size, location, and property features
+- Interactive and user-friendly Streamlit interface
 
 ## Technologies Used
 
 - Python
 - Streamlit
-- Pandas
-- NumPy
 - Scikit-learn
 - XGBoost
-- Joblib
-
-## Machine Learning Models
-
-### Classification Model
-
-The XGBoost classification model predicts the investment potential of a property, such as:
-
-- Profitable Investment Potential
-- Lower Investment Potential
-
-### Regression Model
-
-The XGBoost regression model estimates the property value based on the details entered by the user.
-
-## Input Features
-
-The application analyzes multiple property-related features, including:
-
-- BHK
-- Property size
-- Price
-- Price per square foot
-- Year built
-- Age of property
-- State and city
-- Locality
-- Property type
-- Furnishing status
-- Parking space
-- Security
-- Facing direction
-- Owner type
-- Availability status
-- Public transport accessibility
-
-### Amenities
-
-Users can select available amenities such as:
-
-- Clubhouse
-- Garden
-- Gym
-- Playground
-- Pool
+- Pandas
+- NumPy
+- Machine Learning
 
 ## Project Structure
 
 ```text
 Real_Estate_Project/
 │
+├── app.py/
+│   ├── classification_features.pkl
+│   ├── classification_models.pkl
+│   ├── regression_features.pkl
+│   └── regression_models.pkl
+│
+├── amenity_classes.pkl
+├── locality_frequency_map.pkl
+├── xgboost_classification_features.pkl
+├── xgboost_classifier.pkl
+├── xgboost_regression_features.pkl
+├── xgboost_regressor.pkl
 ├── streamlit_app.py
 ├── requirements.txt
-├── README.md
 ├── .gitignore
-│
-├── xgboost_classifier.pkl
-├── xgboost_classification_features.pkl
-│
-├── xgboost_regressor.pkl
-├── xgboost_regression_features.pkl
-│
-├── locality_frequency_map.pkl
-└── amenity_classes.pkl
+└── README.md
 ```
 
-## Installation
+## Installation and Setup
 
 ### 1. Clone the repository
 
@@ -163,7 +122,7 @@ The application provides:
 - Improve prediction accuracy with larger datasets
 - Add property comparison functionality
 - Add market trend visualizations
-- Deploy the application online
+- Deploy additional versions with enhanced features
 
 ## Author
 
@@ -175,3 +134,7 @@ Aspiring Data Scientist
 ## GitHub Repository
 
 https://github.com/srivalli5454/Real-Estate-Investment-Advisor
+
+## Live Deployment
+
+https://real-estate-investment-advisor-h963vhfzt2dznvmshprgnd.streamlit.app
